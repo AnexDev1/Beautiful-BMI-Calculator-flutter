@@ -15,21 +15,21 @@ class CalculatorBrain {
 
   String getResult() {
     if (_bmi >= 25) {
-      return 'OVERWEIGHT';
+      return 'ከመጠን በላይ ክብደት';
     } else if (_bmi > 18.5) {
-      return 'NORMAL';
+      return 'የተለመደ';
     } else {
-      return 'UNDERWEIGHT';
+      return 'ዝቅተኛ ክብደት';
     }
   }
 
   String getInterpretation() {
     if (_bmi >= 25) {
-      return 'You have a higher than normal body weight. Try to exercise more.';
+      return 'ከተለመደው የሰውነት ክብደት ከፍ ያለ ስለሆን እባክዎን ተጨማሪ የአካል ብቃት እንቅስቃሴ ለማድረግ ይሞክሩ';
     } else if (_bmi > 18.5) {
-      return 'You have a normal body weight. Good job!';
+      return 'መደበኛ የሰውነት ክብደት አሎት';
     } else {
-      return 'You have a lower than normal body weight. You can eat a bit more.';
+      return 'ከተለመደው የሰውነት ክብደት ያነሰ ነው';
     }
   }
 }

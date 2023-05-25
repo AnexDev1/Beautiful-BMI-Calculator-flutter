@@ -24,7 +24,7 @@ class ResultsPage extends StatelessWidget {
               padding: const EdgeInsets.all(15.0),
               alignment: Alignment.bottomLeft,
               child: const Text(
-                'Your Result',
+                'የእርስዎ ውጤት',
                 style: TextStyle(
                   fontSize: 50.0,
                   fontWeight: FontWeight.bold,
