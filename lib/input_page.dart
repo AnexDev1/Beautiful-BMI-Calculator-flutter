@@ -1,5 +1,6 @@
 import 'package:bmi_wizard/bottom_button.dart';
 import 'package:bmi_wizard/results_page.dart';
+import 'package:bmi_wizard/roundIcon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:bmi_wizard/icon_content.dart';
@@ -219,28 +220,6 @@ class _InputPageState extends State<InputPage> {
           }, 'CALCULATE')
         ],
       ),
-    );
-  }
-}
-
-class RoundedIconButton extends StatelessWidget {
-  const RoundedIconButton(this.icon, this.onPressed, {super.key});
-  final IconData icon;
-  final VoidCallback? onPressed;
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      onPressed: onPressed,
-      elevation: 6.0,
-      constraints: const BoxConstraints.tightFor(
-        width: 56.0,
-        height: 56.0,
-      ),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10.0),
-      ),
-      fillColor: const Color(0xff4c4f5e),
-      child: Icon(icon),
     );
   }
 }
