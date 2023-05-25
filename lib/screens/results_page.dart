@@ -4,7 +4,12 @@ import 'package:bmi_wizard/components/reusable_card.dart';
 import 'package:flutter/material.dart';
 
 class ResultsPage extends StatelessWidget {
-  const ResultsPage({super.key});
+  const ResultsPage(this.bmiResult, this.resultText, this.interpretation,
+      {super.key});
+
+  final String bmiResult;
+  final String resultText;
+  final String interpretation;
 
   @override
   Widget build(BuildContext context) {
@@ -31,26 +36,26 @@ class ResultsPage extends StatelessWidget {
             flex: 5,
             child: ReusableCard(
               colour: kInactiveCardColor,
-              cardChild: const Column(
+              cardChild: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
-                    'OVERWEIGHT',
-                    style: TextStyle(
+                    resultText,
+                    style: const TextStyle(
                         color: Color(0xff24d876),
                         fontSize: 22.0,
                         fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    '26.8',
-                    style:
-                        TextStyle(fontSize: 100.0, fontWeight: FontWeight.w900),
+                    bmiResult,
+                    style: const TextStyle(
+                        fontSize: 100.0, fontWeight: FontWeight.w900),
                   ),
                   Text(
                     textAlign: TextAlign.center,
-                    'You have a higher body mass, try to exercises more',
-                    style: TextStyle(fontSize: 22.0),
+                    interpretation,
+                    style: const TextStyle(fontSize: 22.0),
                   ),
                 ],
               ),

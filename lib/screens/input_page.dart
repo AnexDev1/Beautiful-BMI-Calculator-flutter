@@ -1,3 +1,4 @@
+import 'package:bmi_wizard/calculator_brain.dart';
 import 'package:bmi_wizard/components/bottom_button.dart';
 import 'package:bmi_wizard/components/roundIcon_button.dart';
 import 'package:bmi_wizard/screens/results_page.dart';
@@ -209,11 +210,16 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           BottomButton(() {
+            CalculatorBrain calc = CalculatorBrain(height, weight);
             Navigator.push(
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return const ResultsPage();
+                  return ResultsPage(
+                    calc.calcBmi(),
+                    calc.getResult(),
+                    calc.getInterpretation(),
+                  );
                 },
               ),
             );
