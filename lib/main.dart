@@ -1,4 +1,4 @@
-import 'package:bmi_wizard/input_page.dart';
+import 'package:bmi_wizard/screens/input_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const BMICalculator());

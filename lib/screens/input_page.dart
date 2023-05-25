@@ -1,10 +1,10 @@
-import 'package:bmi_wizard/bottom_button.dart';
-import 'package:bmi_wizard/results_page.dart';
-import 'package:bmi_wizard/roundIcon_button.dart';
+import 'package:bmi_wizard/components/bottom_button.dart';
+import 'package:bmi_wizard/components/roundIcon_button.dart';
+import 'package:bmi_wizard/screens/results_page.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:bmi_wizard/icon_content.dart';
-import 'package:bmi_wizard/reusable_card.dart';
+import 'package:bmi_wizard/components/icon_content.dart';
+import 'package:bmi_wizard/components/reusable_card.dart';
 import 'package:bmi_wizard/constants.dart';
 
 enum GenderType {
